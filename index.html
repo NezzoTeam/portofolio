@@ -6,24 +6,27 @@
 
   <title>NezzoTeam — Web Development & Digital Solutions</title>
 
-  <meta name="description"
-        content="NezzoTeam membangun Landing Page, Company Profile, Web Application dan website custom yang modern dan responsif.">
+  <meta
+    name="description"
+    content="Portfolio NezzoTeam — landing page, company profile, dashboard, e-commerce, dan website custom dengan desain modern dan responsif."
+  >
 
   <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#07080b">
 
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-  <div class="background-grid"></div>
-  <div class="glow glow-one"></div>
-  <div class="glow glow-two"></div>
+  <div class="background-grid" aria-hidden="true"></div>
+  <div class="glow glow-one" aria-hidden="true"></div>
+  <div class="glow glow-two" aria-hidden="true"></div>
 
-  <header class="navbar">
+  <header class="navbar" id="navbar">
     <div class="container nav-container">
 
-      <a href="#home" class="logo">
+      <a href="#home" class="logo" aria-label="NezzoTeam home">
         NEZZO<span>TEAM</span>
       </a>
 
@@ -31,9 +34,18 @@
         <a href="#home">Home</a>
         <a href="#services">Services</a>
         <a href="#portfolio">Work</a>
+        <a href="#process">Process</a>
         <a href="#about">About</a>
-        <a href="#contact">Contact</a>
       </nav>
+
+      <a
+        href="https://github.com/NezzoTeam"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="nav-cta"
+      >
+        GitHub ↗
+      </a>
 
       <button
         class="menu-toggle"
@@ -61,7 +73,7 @@
           </div>
 
           <p class="eyebrow">
-            WEB DEVELOPMENT & DIGITAL SOLUTIONS
+            WEB DEVELOPMENT · UI DEVELOPMENT · DIGITAL SOLUTIONS
           </p>
 
           <h1>
@@ -70,9 +82,9 @@
           </h1>
 
           <p class="hero-description">
-            Website modern bukan cuma soal tampilan.
-            Kami membangun pengalaman digital yang membantu
-            brand tampil lebih profesional, kuat, dan terpercaya.
+            Website modern bukan cuma soal tampilan. NezzoTeam membangun
+            pengalaman digital yang rapi, responsif, dan punya karakter
+            untuk membantu brand terlihat lebih profesional.
           </p>
 
           <div class="hero-buttons">
@@ -81,9 +93,31 @@
               <span>↗</span>
             </a>
 
-            <a href="#contact" class="btn btn-secondary">
-              Start a Project
+            <a
+              href="https://github.com/NezzoTeam"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              View GitHub
             </a>
+          </div>
+
+          <div class="hero-proof">
+            <div>
+              <strong>07</strong>
+              <span>Portfolio Demos</span>
+            </div>
+
+            <div>
+              <strong>100%</strong>
+              <span>Responsive</span>
+            </div>
+
+            <div>
+              <strong>Custom</strong>
+              <span>UI Development</span>
+            </div>
           </div>
 
         </div>
@@ -93,7 +127,7 @@
 
             <div class="hero-card-top">
               <span>NEZZOTEAM</span>
-              <span>2026</span>
+              <span>PORTFOLIO / 2026</span>
             </div>
 
             <div class="hero-card-center">
@@ -120,41 +154,39 @@
 
     <section class="marquee" aria-label="Layanan NezzoTeam">
       <div class="marquee-track">
-
         <span>LANDING PAGE</span><i>✦</i>
         <span>COMPANY PROFILE</span><i>✦</i>
         <span>WEB APPLICATION</span><i>✦</i>
         <span>E-COMMERCE</span><i>✦</i>
-        <span>UI DEVELOPMENT</span><i>✦</i>
+        <span>DASHBOARD</span><i>✦</i>
         <span>CUSTOM WEBSITE</span><i>✦</i>
 
         <span>LANDING PAGE</span><i>✦</i>
         <span>COMPANY PROFILE</span><i>✦</i>
         <span>WEB APPLICATION</span><i>✦</i>
         <span>E-COMMERCE</span><i>✦</i>
-        <span>UI DEVELOPMENT</span><i>✦</i>
+        <span>DASHBOARD</span><i>✦</i>
         <span>CUSTOM WEBSITE</span><i>✦</i>
-
       </div>
     </section>
 
-    <section class="section" id="services">
+    <section class="section services-section" id="services">
       <div class="container">
 
         <div class="section-header reveal">
           <div>
-            <p class="eyebrow">01 / SERVICES</p>
+            <p class="eyebrow">01 / CAPABILITIES</p>
 
             <h2>
-              What we<br>
+              What we
               <span>build.</span>
             </h2>
           </div>
 
           <p class="section-description">
-            Dari landing page sederhana sampai sistem berbasis web,
-            setiap project dibuat dengan fokus pada tampilan,
-            fungsi, dan pengalaman pengguna.
+            Dari landing page sederhana sampai dashboard dan web application,
+            setiap project dibuat dengan fokus pada tampilan, fungsi,
+            struktur, dan pengalaman pengguna.
           </p>
         </div>
 
@@ -163,42 +195,35 @@
           <article class="service-row reveal">
             <span class="service-number">01</span>
             <h3>Landing Page</h3>
-            <p>Website satu halaman untuk produk, campaign, bisnis, dan personal brand.</p>
+            <p>Campaign, produk, bisnis, personal brand, dan promotional website.</p>
             <span class="service-arrow">↗</span>
           </article>
 
           <article class="service-row reveal">
             <span class="service-number">02</span>
             <h3>Company Profile</h3>
-            <p>Website profesional untuk membangun identitas dan kredibilitas perusahaan.</p>
+            <p>Website profesional untuk memperkuat identitas dan kredibilitas brand.</p>
             <span class="service-arrow">↗</span>
           </article>
 
           <article class="service-row reveal">
             <span class="service-number">03</span>
-            <h3>Web Application</h3>
-            <p>Sistem berbasis web untuk membantu kebutuhan operasional dan bisnis.</p>
+            <h3>Dashboard & Web App</h3>
+            <p>UI dashboard, admin panel, sistem operasional, dan aplikasi berbasis web.</p>
             <span class="service-arrow">↗</span>
           </article>
 
           <article class="service-row reveal">
             <span class="service-number">04</span>
             <h3>E-Commerce</h3>
-            <p>Website toko online yang modern, nyaman digunakan, dan responsif.</p>
+            <p>Storefront modern yang nyaman digunakan di desktop maupun mobile.</p>
             <span class="service-arrow">↗</span>
           </article>
 
           <article class="service-row reveal">
             <span class="service-number">05</span>
-            <h3>Dashboard</h3>
-            <p>Tampilan pengelolaan data dan sistem administrasi yang intuitif.</p>
-            <span class="service-arrow">↗</span>
-          </article>
-
-          <article class="service-row reveal">
-            <span class="service-number">06</span>
             <h3>Custom Website</h3>
-            <p>Website yang dikembangkan khusus berdasarkan kebutuhan project.</p>
+            <p>Website yang dirancang berdasarkan kebutuhan dan identitas project.</p>
             <span class="service-arrow">↗</span>
           </article>
 
@@ -210,42 +235,54 @@
     <section class="section portfolio-section" id="portfolio">
       <div class="container">
 
-        <div class="section-header reveal">
-          <div>
-            <p class="eyebrow">02 / SELECTED WORK</p>
+        <div class="portfolio-heading">
 
-            <h2>
-              Selected<br>
-              <span>projects.</span>
-            </h2>
+          <div class="section-header reveal">
+            <div>
+              <p class="eyebrow">02 / SELECTED WORK</p>
+
+              <h2>
+                Selected
+                <span>projects.</span>
+              </h2>
+            </div>
+
+            <p class="section-description">
+              Tujuh demo dengan karakter visual dan kebutuhan bisnis yang berbeda.
+              Klik Live Demo untuk melihat project secara langsung.
+            </p>
           </div>
 
-          <p class="section-description">
-            Beberapa konsep dan project yang menunjukkan bagaimana kami
-            menggabungkan desain, teknologi, dan kebutuhan bisnis.
-          </p>
+          <div class="work-toolbar reveal">
+            <div class="filter-group" aria-label="Filter portfolio">
+              <button class="filter-button active" data-filter="all">All <span>07</span></button>
+              <button class="filter-button" data-filter="landing">Landing Page</button>
+              <button class="filter-button" data-filter="company">Company Profile</button>
+              <button class="filter-button" data-filter="app">Web App</button>
+              <button class="filter-button" data-filter="commerce">E-Commerce</button>
+            </div>
+
+            <p class="project-count" id="projectCount">Showing 07 projects</p>
+          </div>
+
         </div>
 
-        <div class="projects-grid">
+        <div class="projects-grid" id="projectsGrid">
 
-          <article class="project project-large reveal">
+          <article class="project project-featured reveal" data-category="landing">
 
-            <div class="project-preview preview-purple">
+            <div class="project-preview preview-perfume">
               <span class="preview-label">LANDING PAGE</span>
+              <span class="featured-badge">FEATURED</span>
 
-              <div class="browser">
+              <div class="browser browser-perfume">
                 <div class="browser-bar">
                   <span></span><span></span><span></span>
                 </div>
 
                 <div class="browser-content">
-                  <small>LUXURY COLLECTION</small>
-
-                  <strong>
-                    Beyond<br>
-                    The Scent.
-                  </strong>
-
+                  <small>NOIRÉ / LUXURY COLLECTION</small>
+                  <strong>Beyond<br>The Scent.</strong>
                   <div class="fake-button">DISCOVER</div>
                 </div>
               </div>
@@ -253,7 +290,7 @@
 
             <div class="project-details">
               <div>
-                <p>LANDING PAGE</p>
+                <p>LANDING PAGE · LUXURY BRAND</p>
                 <h3>Luxury Perfume</h3>
               </div>
 
@@ -266,60 +303,137 @@
                   rel="noopener noreferrer"
                   class="project-link"
                 >
-                  Live Demo
-                  <span>↗</span>
+                  Live Demo <span>↗</span>
                 </a>
               </div>
             </div>
 
           </article>
 
-          <article class="project reveal">
+          <article class="project reveal" data-category="company">
 
-            <div class="project-preview preview-blue">
+            <div class="project-preview preview-corporate">
               <span class="preview-label">COMPANY PROFILE</span>
 
-              <div class="mini-site">
-                <div class="mini-nav"></div>
+              <div class="corporate-ui">
+                <div class="ui-kicker">AUREN GROUP</div>
+                <strong>Building businesses<br>for what’s next.</strong>
+                <div class="corporate-lines"><i></i><i></i><i></i></div>
+              </div>
+            </div>
 
-                <h4>
-                  Building the<br>
-                  future together.
-                </h4>
+            <div class="project-details">
+              <div>
+                <p>COMPANY PROFILE · CORPORATE</p>
+                <h3>AUREN Group</h3>
+              </div>
 
-                <div class="mini-lines">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+              <div class="project-actions">
+                <span class="project-type">Concept Project</span>
+                <a
+                  href="https://nezzoteam.github.io/corporate-company-profile/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  Live Demo <span>↗</span>
+                </a>
+              </div>
+            </div>
+
+          </article>
+
+          <article class="project reveal" data-category="landing">
+
+            <div class="project-preview preview-property">
+              <span class="preview-label">PROPERTY</span>
+
+              <div class="property-ui">
+                <div class="property-building pb-one"></div>
+                <div class="property-building pb-two"></div>
+                <div class="property-ground"></div>
+                <span>VELORA RESIDENCE</span>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div>
+                <p>LANDING PAGE · REAL ESTATE</p>
+                <h3>VELORA Residence</h3>
+              </div>
+
+              <div class="project-actions">
+                <span class="project-type">Concept Project</span>
+                <a
+                  href="https://nezzoteam.github.io/property-landing-page/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  Live Demo <span>↗</span>
+                </a>
+              </div>
+            </div>
+
+          </article>
+
+          <article class="project reveal" data-category="company">
+
+            <div class="project-preview preview-education">
+              <span class="preview-label">EDUCATION</span>
+
+              <div class="education-ui">
+                <span>ARUNA ACADEMY</span>
+                <strong>Learning for<br>the future.</strong>
+
+                <div class="education-shapes">
+                  <i></i><i></i><i></i>
                 </div>
               </div>
             </div>
 
             <div class="project-details">
               <div>
-                <p>COMPANY PROFILE</p>
-                <h3>Corporate Website</h3>
+                <p>COMPANY PROFILE · EDUCATION</p>
+                <h3>ARUNA Academy</h3>
               </div>
 
-              <span class="project-type">Coming Soon</span>
+              <div class="project-actions">
+                <span class="project-type">Concept Project</span>
+                <a
+                  href="https://nezzoteam.github.io/education-company-profile/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  Live Demo <span>↗</span>
+                </a>
+              </div>
             </div>
 
           </article>
 
-          <article class="project reveal">
+          <article class="project project-wide reveal" data-category="app">
 
-            <div class="project-preview preview-dark">
+            <div class="project-preview preview-dashboard">
               <span class="preview-label">WEB APPLICATION</span>
 
-              <div class="dashboard">
-                <div class="dashboard-side"></div>
+              <div class="dashboard-ui">
+                <div class="dashboard-side">
+                  <span></span><span></span><span></span><span></span>
+                </div>
 
                 <div class="dashboard-main">
-                  <div class="dash-card"></div>
+                  <div class="dashboard-topline"></div>
 
-                  <div class="dash-row">
-                    <div></div>
-                    <div></div>
+                  <div class="dashboard-metrics">
+                    <i></i><i></i><i></i><i></i>
+                  </div>
+
+                  <div class="dashboard-chart">
+                    <svg viewBox="0 0 500 140" preserveAspectRatio="none" aria-hidden="true">
+                      <polyline points="0,125 70,105 140,112 210,70 280,85 350,42 420,55 500,20"></polyline>
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -327,13 +441,150 @@
 
             <div class="project-details">
               <div>
-                <p>DASHBOARD</p>
-                <h3>Management System</h3>
+                <p>DASHBOARD · ANALYTICS</p>
+                <h3>NEXORA Dashboard</h3>
               </div>
 
-              <span class="project-type">Coming Soon</span>
+              <div class="project-actions">
+                <span class="project-type">Interactive Demo</span>
+                <a
+                  href="https://nezzoteam.github.io/dashboard-web-app-demo/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  Live Demo <span>↗</span>
+                </a>
+              </div>
             </div>
 
+          </article>
+
+          <article class="project reveal" data-category="commerce">
+
+            <div class="project-preview preview-fashion">
+              <span class="preview-label">E-COMMERCE</span>
+
+              <div class="fashion-ui">
+                <span>VANTA</span>
+
+                <div class="fashion-product">
+                  <div class="fashion-head"></div>
+                  <div class="fashion-body"></div>
+                </div>
+
+                <strong>Less noise.<br>More presence.</strong>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div>
+                <p>E-COMMERCE · FASHION</p>
+                <h3>VANTA Store</h3>
+              </div>
+
+              <div class="project-actions">
+                <span class="project-type">Interactive Demo</span>
+                <a
+                  href="https://nezzoteam.github.io/fashion-ecommerce-demo/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  Live Demo <span>↗</span>
+                </a>
+              </div>
+            </div>
+
+          </article>
+
+          <article class="project reveal" data-category="landing">
+
+            <div class="project-preview preview-cafe">
+              <span class="preview-label">F&B / HOSPITALITY</span>
+
+              <div class="cafe-ui">
+                <span>EMBER & BEAN</span>
+
+                <div class="coffee-cup">
+                  <div class="coffee-body"></div>
+                  <div class="coffee-handle"></div>
+                  <i></i><i></i>
+                </div>
+
+                <strong>Slow mornings.<br>Good coffee.</strong>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div>
+                <p>LANDING PAGE · CAFE</p>
+                <h3>EMBER & BEAN</h3>
+              </div>
+
+              <div class="project-actions">
+                <span class="project-type">Concept Project</span>
+                <a
+                  href="https://nezzoteam.github.io/cafe-restaurant-landing/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  Live Demo <span>↗</span>
+                </a>
+              </div>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section process-section" id="process">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div>
+            <p class="eyebrow">03 / PROCESS</p>
+
+            <h2>
+              Simple process.
+              <span>Clear direction.</span>
+            </h2>
+          </div>
+
+          <p class="section-description">
+            Alur kerja dibuat sederhana supaya project tetap terarah
+            dari konsep awal sampai siap digunakan.
+          </p>
+        </div>
+
+        <div class="process-grid">
+
+          <article class="process-card reveal">
+            <span>01</span>
+            <h3>Brief</h3>
+            <p>Memahami tujuan, kebutuhan, audience, dan arah visual project.</p>
+          </article>
+
+          <article class="process-card reveal">
+            <span>02</span>
+            <h3>Structure</h3>
+            <p>Menyusun halaman, konten, alur pengguna, dan komponen utama.</p>
+          </article>
+
+          <article class="process-card reveal">
+            <span>03</span>
+            <h3>Build</h3>
+            <p>Mengembangkan UI responsif dan fungsi sesuai ruang lingkup project.</p>
+          </article>
+
+          <article class="process-card reveal">
+            <span>04</span>
+            <h3>Launch</h3>
+            <p>Final check, deployment, dan memastikan website siap ditampilkan.</p>
           </article>
 
         </div>
@@ -345,7 +596,8 @@
       <div class="container about-grid">
 
         <div class="about-label reveal">
-          <p class="eyebrow">03 / ABOUT</p>
+          <p class="eyebrow">04 / ABOUT</p>
+          <span>NEZZOTEAM / DIGITAL STUDIO</span>
         </div>
 
         <div class="about-content reveal">
@@ -355,31 +607,25 @@
           </h2>
 
           <p>
-            NezzoTeam adalah digital development studio yang berfokus pada
-            pembuatan website modern, responsif, fungsional, dan memiliki
-            identitas visual yang kuat.
+            NezzoTeam adalah web development studio yang berfokus pada
+            website modern, responsif, fungsional, dan memiliki identitas
+            visual yang kuat.
           </p>
 
           <p>
-            Kami percaya website yang baik bukan hanya terlihat menarik,
-            tetapi juga mudah digunakan dan mampu menyampaikan karakter sebuah brand.
+            Portfolio ini menggabungkan konsep project dengan eksplorasi
+            UI untuk menunjukkan fleksibilitas gaya — dari luxury brand,
+            corporate, property, education, dashboard, e-commerce,
+            sampai hospitality.
           </p>
 
-          <div class="stats">
-            <div>
-              <strong>100%</strong>
-              <span>Responsive Design</span>
-            </div>
-
-            <div>
-              <strong>Custom</strong>
-              <span>Development</span>
-            </div>
-
-            <div>
-              <strong>Modern</strong>
-              <span>UI Experience</span>
-            </div>
+          <div class="about-tags">
+            <span>Responsive UI</span>
+            <span>Landing Page</span>
+            <span>Company Profile</span>
+            <span>Dashboard</span>
+            <span>E-Commerce</span>
+            <span>Custom Website</span>
           </div>
 
         </div>
@@ -398,14 +644,25 @@
         </h2>
 
         <p>
-          Ceritakan ide project kamu dan mari kita ubah
-          menjadi pengalaman digital yang nyata.
+          Lihat seluruh repository NezzoTeam atau gunakan portfolio ini
+          sebagai gambaran style dan jenis website yang bisa dikembangkan.
         </p>
 
-        <a href="#home" class="btn btn-primary">
-          Start a Project
-          <span>↗</span>
-        </a>
+        <div class="contact-actions">
+          <a
+            href="https://github.com/NezzoTeam"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            View NezzoTeam GitHub
+            <span>↗</span>
+          </a>
+
+          <a href="#portfolio" class="btn btn-secondary">
+            View Projects
+          </a>
+        </div>
 
       </div>
     </section>
@@ -419,15 +676,17 @@
         NEZZO<span>TEAM</span>
       </a>
 
-      <p>
-        Web Development<br>
-        & Digital Solutions
-      </p>
+      <div class="footer-nav">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Work</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+      </div>
     </div>
 
     <div class="container footer-bottom">
       <p>© 2026 NezzoTeam</p>
-      <p>Built with passion & code.</p>
+      <p>Web Development & Digital Solutions</p>
     </div>
 
   </footer>
