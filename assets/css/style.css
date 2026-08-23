@@ -1732,3 +1732,57 @@ img {
       space-between;
   }
 }
+
+.project-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.project-type {
+  color: #6f7079;
+  font-size: 0.75rem;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 9px 14px;
+
+  border: 1px solid rgba(121, 104, 255, 0.35);
+  border-radius: 8px;
+
+  color: var(--purple-light);
+
+  font-size: 0.76rem;
+  font-weight: 600;
+
+  transition: 0.25s ease;
+}
+
+.project-link span {
+  transition: transform 0.25s ease;
+}
+
+.project-link:hover {
+  background: var(--purple);
+  border-color: var(--purple);
+  color: white;
+}
+
+.project-link:hover span {
+  transform: translate(3px, -3px);
+}
+
+@media (max-width: 600px) {
+  .project-details {
+    align-items: flex-start;
+  }
+
+  .project-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
