@@ -1693,3 +1693,42 @@ img {
   }
 
 }
+
+.project-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.project-actions > span {
+  color: var(--text-dim);
+  font-size: 0.76rem;
+}
+
+.project-link {
+  color: var(--purple-light);
+
+  font-size: 0.78rem;
+  font-weight: 600;
+
+  padding-bottom: 3px;
+
+  border-bottom:
+    1px solid rgba(155, 144, 255, 0.35);
+
+  transition: 0.25s ease;
+}
+
+.project-link:hover {
+  color: white;
+  border-color: white;
+}
+
+@media (max-width: 480px) {
+  .project-actions {
+    width: 100%;
+
+    justify-content:
+      space-between;
+  }
+}
