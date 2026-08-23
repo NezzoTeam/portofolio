@@ -1,83 +1,86 @@
-const navbar = document.querySelector(".navbar");
+const navbar = document.getElementById("navbar");
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
 const navLinks = document.querySelectorAll(".nav-menu a");
 
+const filterButtons = document.querySelectorAll(".filter-button");
+const projects = document.querySelectorAll(".project");
+const projectCount = document.getElementById("projectCount");
 
-// Navbar ketika scroll
 window.addEventListener("scroll", () => {
   if (window.scrollY > 30) {
-    navbar.classList.add("scrolled");
+    navbar?.classList.add("scrolled");
   } else {
-    navbar.classList.remove("scrolled");
+    navbar?.classList.remove("scrolled");
   }
 });
 
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = menuToggle.classList.toggle("active");
 
-// Mobile menu
-menuToggle.addEventListener("click", () => {
-  menuToggle.classList.toggle("active");
-  navMenu.classList.toggle("active");
-  document.body.classList.toggle("menu-open");
-
-  const expanded =
-    menuToggle.getAttribute("aria-expanded") === "true";
-
-  menuToggle.setAttribute(
-    "aria-expanded",
-    String(!expanded)
-  );
-});
-
-
-// Tutup menu setelah klik link
-navLinks.forEach((link) => {
-
-  link.addEventListener("click", () => {
-
-    menuToggle.classList.remove("active");
-    navMenu.classList.remove("active");
-    document.body.classList.remove("menu-open");
+    navMenu.classList.toggle("active");
+    document.body.classList.toggle("menu-open");
 
     menuToggle.setAttribute(
       "aria-expanded",
-      "false"
+      isOpen ? "true" : "false"
     );
-
   });
+}
 
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    menuToggle?.classList.remove("active");
+    navMenu?.classList.remove("active");
+    document.body.classList.remove("menu-open");
+    menuToggle?.setAttribute("aria-expanded", "false");
+  });
 });
 
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter || "all";
 
-// Reveal animation
-const revealElements =
-  document.querySelectorAll(".reveal");
+    filterButtons.forEach((item) => item.classList.remove("active"));
+    button.classList.add("active");
 
-const revealObserver =
-  new IntersectionObserver(
-    (entries) => {
+    let visibleCount = 0;
 
-      entries.forEach((entry) => {
+    projects.forEach((project) => {
+      const category = project.dataset.category;
 
-        if (entry.isIntersecting) {
+      const visible = filter === "all" || category === filter;
 
-          entry.target.classList.add("active");
+      project.classList.toggle("hidden", !visible);
 
-          revealObserver.unobserve(
-            entry.target
-          );
+      if (visible) {
+        visibleCount += 1;
+      }
+    });
 
-        }
-
-      });
-
-    },
-    {
-      threshold: 0.12
+    if (projectCount) {
+      projectCount.textContent = `Showing ${String(visibleCount).padStart(2, "0")} ${visibleCount === 1 ? "project" : "projects"}`;
     }
+  });
+});
+
+const revealItems = document.querySelectorAll(".reveal");
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
   );
 
-
-revealElements.forEach((element) => {
-  revealObserver.observe(element);
-});
+  revealItems.forEach((item) => observer.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add("active"));
+}
