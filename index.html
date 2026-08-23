@@ -2,75 +2,182 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>NezzoTeam — Web Development & Digital Solutions</title>
+
   <meta name="description"
-        content="NezzoTeam — Web Development & Digital Solutions. Landing Page, Company Profile, Web Application dan Custom Website.">
+        content="NezzoTeam membangun Landing Page, Company Profile, Web Application dan website custom yang modern dan responsif.">
 
   <meta name="robots" content="index, follow">
-
-  <title>NezzoTeam — Web Development & Digital Solutions</title>
 
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
+  <!-- BACKGROUND -->
+  <div class="background-grid"></div>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+
+
   <!-- NAVBAR -->
   <header class="navbar">
+
     <div class="container nav-container">
 
       <a href="#home" class="logo">
-        Nezzo<span>Team</span>
+        NEZZO<span>TEAM</span>
       </a>
 
-      <nav class="nav-menu" aria-label="Navigasi utama">
+      <nav class="nav-menu" id="navMenu">
+
         <a href="#home">Home</a>
         <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#portfolio">Work</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
+
       </nav>
 
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Buka navigasi"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
     </div>
+
   </header>
+
 
 
   <main>
 
     <!-- HERO -->
     <section class="hero" id="home">
-      <div class="container hero-content">
 
-        <p class="hero-label">
-          WEB DEVELOPMENT & DIGITAL SOLUTIONS
-        </p>
+      <div class="container hero-wrapper">
 
-        <h1>
-          We Build Digital
-          <span>Experiences.</span>
-        </h1>
+        <div class="hero-content reveal">
 
-        <p class="hero-description">
-          NezzoTeam membantu bisnis dan personal membangun website
-          modern, responsif, cepat, dan sesuai kebutuhan.
-        </p>
+          <div class="status">
+            <span></span>
+            Available for new projects
+          </div>
 
-        <div class="hero-buttons">
+          <p class="eyebrow">
+            WEB DEVELOPMENT & DIGITAL SOLUTIONS
+          </p>
 
-          <a href="#portfolio" class="btn btn-primary">
-            View Portfolio
-          </a>
+          <h1>
+            We build digital
+            <span>experiences.</span>
+          </h1>
 
-          <a href="#contact" class="btn btn-secondary">
-            Start a Project
-          </a>
+          <p class="hero-description">
+            Website modern bukan cuma soal tampilan.
+            Kami membangun pengalaman digital yang membantu
+            brand tampil lebih profesional, kuat, dan terpercaya.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#portfolio" class="btn btn-primary">
+              Explore Our Work
+              <span>↗</span>
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+              Start a Project
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-side reveal">
+
+          <div class="hero-card">
+
+            <div class="hero-card-top">
+              <span>NEZZOTEAM</span>
+              <span>2026</span>
+            </div>
+
+            <div class="hero-card-center">
+
+              <span class="code-symbol">
+                &lt;/&gt;
+              </span>
+
+              <p>
+                Design.<br>
+                Develop.<br>
+                <strong>Deliver.</strong>
+              </p>
+
+            </div>
+
+            <div class="hero-card-bottom">
+
+              <span>01</span>
+
+              <div class="line"></div>
+
+              <span>Digital Studio</span>
+
+            </div>
+
+          </div>
 
         </div>
 
       </div>
+
     </section>
+
+
+
+    <!-- MARQUEE -->
+    <section class="marquee">
+
+      <div class="marquee-track">
+
+        <span>LANDING PAGE</span>
+        <i>✦</i>
+
+        <span>COMPANY PROFILE</span>
+        <i>✦</i>
+
+        <span>WEB APPLICATION</span>
+        <i>✦</i>
+
+        <span>E-COMMERCE</span>
+        <i>✦</i>
+
+        <span>UI DEVELOPMENT</span>
+        <i>✦</i>
+
+        <span>CUSTOM WEBSITE</span>
+        <i>✦</i>
+
+        <span>LANDING PAGE</span>
+        <i>✦</i>
+
+        <span>COMPANY PROFILE</span>
+        <i>✦</i>
+
+      </div>
+
+    </section>
+
 
 
     <!-- SERVICES -->
@@ -78,76 +185,175 @@
 
       <div class="container">
 
-        <div class="section-heading">
-          <p>WHAT WE DO</p>
-          <h2>Our Services</h2>
+        <div class="section-header reveal">
+
+          <div>
+
+            <p class="eyebrow">
+              01 / SERVICES
+            </p>
+
+            <h2>
+              What we<br>
+              <span>build.</span>
+            </h2>
+
+          </div>
+
+          <p class="section-description">
+            Dari landing page sederhana sampai sistem berbasis web,
+            setiap project dibuat dengan fokus pada tampilan,
+            fungsi, dan pengalaman pengguna.
+          </p>
+
         </div>
 
-        <div class="services-grid">
 
-          <article class="service-card">
-            <span>01</span>
-            <h3>Landing Page</h3>
+        <div class="service-list">
+
+
+          <article class="service-row reveal">
+
+            <span class="service-number">
+              01
+            </span>
+
+            <h3>
+              Landing Page
+            </h3>
+
             <p>
-              Landing page modern untuk produk, campaign,
-              personal brand, dan bisnis.
+              Website satu halaman untuk produk,
+              campaign, bisnis, dan personal brand.
             </p>
+
+            <span class="service-arrow">
+              ↗
+            </span>
+
           </article>
 
 
-          <article class="service-card">
-            <span>02</span>
-            <h3>Company Profile</h3>
+
+          <article class="service-row reveal">
+
+            <span class="service-number">
+              02
+            </span>
+
+            <h3>
+              Company Profile
+            </h3>
+
             <p>
-              Website profesional untuk memperkuat identitas
-              dan kredibilitas bisnis.
+              Website profesional untuk membangun
+              identitas dan kredibilitas perusahaan.
             </p>
+
+            <span class="service-arrow">
+              ↗
+            </span>
+
           </article>
 
 
-          <article class="service-card">
-            <span>03</span>
-            <h3>E-Commerce</h3>
+
+          <article class="service-row reveal">
+
+            <span class="service-number">
+              03
+            </span>
+
+            <h3>
+              Web Application
+            </h3>
+
             <p>
-              Website toko online dengan tampilan modern
-              dan pengalaman pengguna yang nyaman.
+              Sistem berbasis web untuk membantu
+              kebutuhan operasional dan bisnis.
             </p>
+
+            <span class="service-arrow">
+              ↗
+            </span>
+
           </article>
 
 
-          <article class="service-card">
-            <span>04</span>
-            <h3>Web Application</h3>
+
+          <article class="service-row reveal">
+
+            <span class="service-number">
+              04
+            </span>
+
+            <h3>
+              E-Commerce
+            </h3>
+
             <p>
-              Sistem berbasis web yang dikembangkan sesuai
-              kebutuhan operasional maupun bisnis.
+              Website toko online yang modern,
+              nyaman digunakan, dan responsif.
             </p>
+
+            <span class="service-arrow">
+              ↗
+            </span>
+
           </article>
 
 
-          <article class="service-card">
-            <span>05</span>
-            <h3>Dashboard</h3>
+
+          <article class="service-row reveal">
+
+            <span class="service-number">
+              05
+            </span>
+
+            <h3>
+              Dashboard
+            </h3>
+
             <p>
-              Dashboard modern untuk monitoring,
-              administrasi, dan pengelolaan data.
+              Tampilan pengelolaan data dan sistem
+              administrasi yang intuitif.
             </p>
+
+            <span class="service-arrow">
+              ↗
+            </span>
+
           </article>
 
 
-          <article class="service-card">
-            <span>06</span>
-            <h3>Custom Website</h3>
+
+          <article class="service-row reveal">
+
+            <span class="service-number">
+              06
+            </span>
+
+            <h3>
+              Custom Website
+            </h3>
+
             <p>
-              Website custom yang disesuaikan dengan
-              kebutuhan dan karakter brand.
+              Website yang dikembangkan khusus
+              berdasarkan kebutuhan project.
             </p>
+
+            <span class="service-arrow">
+              ↗
+            </span>
+
           </article>
 
         </div>
 
       </div>
+
     </section>
+
 
 
     <!-- PORTFOLIO -->
@@ -155,66 +361,202 @@
 
       <div class="container">
 
-        <div class="section-heading">
-          <p>SELECTED WORK</p>
-          <h2>Our Portfolio</h2>
+        <div class="section-header reveal">
+
+          <div>
+
+            <p class="eyebrow">
+              02 / SELECTED WORK
+            </p>
+
+            <h2>
+              Selected<br>
+              <span>projects.</span>
+            </h2>
+
+          </div>
+
+          <p class="section-description">
+            Beberapa konsep dan project yang menunjukkan
+            bagaimana kami menggabungkan desain,
+            teknologi, dan kebutuhan bisnis.
+          </p>
+
         </div>
 
 
-        <div class="portfolio-grid">
+        <div class="projects-grid">
 
-          <article class="project-card">
 
-            <div class="project-preview">
-              Project Preview
+          <!-- PROJECT 01 -->
+          <article class="project project-large reveal">
+
+            <div class="project-preview preview-purple">
+
+              <span class="preview-label">
+                LANDING PAGE
+              </span>
+
+              <div class="browser">
+
+                <div class="browser-bar">
+
+                  <span></span>
+                  <span></span>
+                  <span></span>
+
+                </div>
+
+                <div class="browser-content">
+
+                  <small>
+                    LUXURY COLLECTION
+                  </small>
+
+                  <strong>
+                    Beyond<br>
+                    The Scent.
+                  </strong>
+
+                  <div class="fake-button">
+                    DISCOVER
+                  </div>
+
+                </div>
+
+              </div>
+
             </div>
 
-            <div class="project-info">
-              <p>LANDING PAGE</p>
 
-              <h3>Luxury Perfume</h3>
+            <div class="project-details">
 
-              <span class="coming-soon">
-                Coming Soon
+              <div>
+
+                <p>
+                  LANDING PAGE
+                </p>
+
+                <h3>
+                  Luxury Perfume
+                </h3>
+
+              </div>
+
+              <span>
+                Concept Project
               </span>
+
             </div>
 
           </article>
 
 
-          <article class="project-card">
 
-            <div class="project-preview">
-              Project Preview
+          <!-- PROJECT 02 -->
+          <article class="project reveal">
+
+            <div class="project-preview preview-blue">
+
+              <span class="preview-label">
+                COMPANY PROFILE
+              </span>
+
+              <div class="mini-site">
+
+                <div class="mini-nav"></div>
+
+                <h4>
+                  Building the<br>
+                  future together.
+                </h4>
+
+                <div class="mini-lines">
+
+                  <span></span>
+                  <span></span>
+                  <span></span>
+
+                </div>
+
+              </div>
+
             </div>
 
-            <div class="project-info">
-              <p>COMPANY PROFILE</p>
 
-              <h3>Corporate Website</h3>
+            <div class="project-details">
 
-              <span class="coming-soon">
-                Coming Soon
+              <div>
+
+                <p>
+                  COMPANY PROFILE
+                </p>
+
+                <h3>
+                  Corporate Website
+                </h3>
+
+              </div>
+
+              <span>
+                Concept Project
               </span>
+
             </div>
 
           </article>
 
 
-          <article class="project-card">
 
-            <div class="project-preview">
-              Project Preview
+          <!-- PROJECT 03 -->
+          <article class="project reveal">
+
+            <div class="project-preview preview-dark">
+
+              <span class="preview-label">
+                WEB APPLICATION
+              </span>
+
+              <div class="dashboard">
+
+                <div class="dashboard-side"></div>
+
+                <div class="dashboard-main">
+
+                  <div class="dash-card"></div>
+
+                  <div class="dash-row">
+
+                    <div></div>
+                    <div></div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
             </div>
 
-            <div class="project-info">
-              <p>WEB APPLICATION</p>
 
-              <h3>Dashboard System</h3>
+            <div class="project-details">
 
-              <span class="coming-soon">
-                Coming Soon
+              <div>
+
+                <p>
+                  DASHBOARD
+                </p>
+
+                <h3>
+                  Management System
+                </h3>
+
+              </div>
+
+              <span>
+                Concept Project
               </span>
+
             </div>
 
           </article>
@@ -222,64 +564,153 @@
         </div>
 
       </div>
+
     </section>
+
 
 
     <!-- ABOUT -->
-    <section class="section" id="about">
+    <section class="section about-section" id="about">
 
-      <div class="container about-content">
+      <div class="container about-grid">
 
-        <div class="section-heading">
-          <p>ABOUT US</p>
+        <div class="about-label reveal">
 
-          <h2>
-            Digital solutions built with purpose.
-          </h2>
+          <p class="eyebrow">
+            03 / ABOUT
+          </p>
+
         </div>
 
-        <p>
-          NezzoTeam berfokus pada pengembangan website modern,
-          responsif, fungsional, dan memiliki identitas visual
-          yang sesuai dengan kebutuhan setiap project.
-        </p>
+
+        <div class="about-content reveal">
+
+          <h2>
+            Not just websites.
+            <span>
+              We build digital presence.
+            </span>
+          </h2>
+
+          <p>
+            NezzoTeam adalah digital development studio yang
+            berfokus pada pembuatan website modern,
+            responsif, fungsional, dan memiliki identitas visual
+            yang kuat.
+          </p>
+
+          <p>
+            Kami percaya website yang baik bukan hanya terlihat
+            menarik, tetapi juga mudah digunakan dan mampu
+            menyampaikan karakter sebuah brand.
+          </p>
+
+
+          <div class="stats">
+
+            <div>
+
+              <strong>
+                100%
+              </strong>
+
+              <span>
+                Responsive Design
+              </span>
+
+            </div>
+
+            <div>
+
+              <strong>
+                Custom
+              </strong>
+
+              <span>
+                Development
+              </span>
+
+            </div>
+
+            <div>
+
+              <strong>
+                Modern
+              </strong>
+
+              <span>
+                UI Experience
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
+
     </section>
 
 
+
     <!-- CONTACT -->
-    <section class="section contact-section" id="contact">
+    <section class="contact-section" id="contact">
 
-      <div class="container contact-content">
+      <div class="container contact-wrapper reveal">
 
-        <p>HAVE A PROJECT?</p>
+        <p class="eyebrow">
+          HAVE A PROJECT IN MIND?
+        </p>
 
         <h2>
-          Let's build something great together.
+          Let's build something
+          <span>worth remembering.</span>
         </h2>
 
         <p>
-          Informasi kontak NezzoTeam akan segera tersedia.
+          Ceritakan ide project kamu dan mari kita
+          ubah menjadi pengalaman digital yang nyata.
         </p>
 
+        <a href="#" class="btn btn-primary">
+          Start a Project
+          <span>↗</span>
+        </a>
+
       </div>
+
     </section>
 
   </main>
 
 
+
   <!-- FOOTER -->
   <footer class="footer">
 
-    <div class="container footer-content">
+    <div class="container footer-top">
+
+      <a href="#home" class="footer-logo">
+        NEZZO<span>TEAM</span>
+      </a>
 
       <p>
-        © 2026 NezzoTeam. All rights reserved.
+        Web Development<br>
+        & Digital Solutions
+      </p>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+      <p>
+        © 2026 NezzoTeam
       </p>
 
       <p>
-        Web Development & Digital Solutions
+        Built with passion & code.
       </p>
 
     </div>
