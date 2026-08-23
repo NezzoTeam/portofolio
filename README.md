@@ -4,7 +4,7 @@
 
 Kami membuat website modern, responsif, dan disesuaikan dengan kebutuhan bisnis maupun personal.
 
-## 🚀 Services
+##  Services
 
 - Landing Page
 - Company Profile
@@ -13,11 +13,11 @@ Kami membuat website modern, responsif, dan disesuaikan dengan kebutuhan bisnis 
 - Dashboard
 - Custom Website
 
-## 💼 Portfolio
+##  Portfolio
 
 Coming Soon 🚀
 
-## 🛠️ Technologies
+##  Technologies
 
 HTML • CSS • JavaScript • PHP • MySQL
 
