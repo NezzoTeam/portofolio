@@ -1694,44 +1694,9 @@ img {
 
 }
 
-.project-actions {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.project-actions > span {
-  color: var(--text-dim);
-  font-size: 0.76rem;
-}
-
-.project-link {
-  color: var(--purple-light);
-
-  font-size: 0.78rem;
-  font-weight: 600;
-
-  padding-bottom: 3px;
-
-  border-bottom:
-    1px solid rgba(155, 144, 255, 0.35);
-
-  transition: 0.25s ease;
-}
-
-.project-link:hover {
-  color: white;
-  border-color: white;
-}
-
-@media (max-width: 480px) {
-  .project-actions {
-    width: 100%;
-
-    justify-content:
-      space-between;
-  }
-}
+/* =========================
+   PROJECT ACTIONS
+========================= */
 
 .project-actions {
   display: flex;
@@ -1740,49 +1705,90 @@ img {
 }
 
 .project-type {
-  color: #6f7079;
+  color: var(--text-dim);
   font-size: 0.75rem;
+  white-space: nowrap;
 }
 
 .project-link {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+
   gap: 8px;
 
-  padding: 9px 14px;
+  min-height: 38px;
 
-  border: 1px solid rgba(121, 104, 255, 0.35);
-  border-radius: 8px;
+  padding: 8px 14px;
 
   color: var(--purple-light);
 
   font-size: 0.76rem;
   font-weight: 600;
 
-  transition: 0.25s ease;
+  border: 1px solid rgba(121, 104, 255, 0.35);
+  border-radius: 8px;
+
+  background: rgba(121, 104, 255, 0.03);
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .project-link span {
+  display: inline-block;
+
   transition: transform 0.25s ease;
 }
 
 .project-link:hover {
+  color: #ffffff;
+
   background: var(--purple);
+
   border-color: var(--purple);
-  color: white;
+
+  transform: translateY(-2px);
 }
 
 .project-link:hover span {
   transform: translate(3px, -3px);
 }
 
+
+/* TABLET / MOBILE */
+
 @media (max-width: 600px) {
+
   .project-details {
+    flex-direction: column;
     align-items: flex-start;
+
+    gap: 16px;
   }
 
   .project-actions {
     width: 100%;
+
     justify-content: space-between;
   }
+
+}
+
+
+@media (max-width: 420px) {
+
+  .project-actions {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .project-link {
+    width: 100%;
+  }
+
 }
